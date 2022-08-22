@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vue Email List</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
@@ -12,7 +17,7 @@
             <h1>Lista Email</h1>
             <div class="email-list"  v-if="listaEmail.length == 10">
                 <ul>
-                    <li v-for="email in listaEmail">{{ email }}</li>
+                    <li v-for="email in listaEmail">{{ email }} <a href=""><i class="bi bi-envelope-exclamation-fill"></i></a></li>
                 </ul>
             </div>
             
